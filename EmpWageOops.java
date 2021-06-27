@@ -11,13 +11,14 @@ class Attendance extends Wage
     double empCheck = Math.floor(Math.random() * 10) % 3;
     void isPresent()
     {
-        int check = 0;
-	if ( check == 0 )
+        int fulltime =0;
+        int parttime =1;
+	if ( empCheck == 0 )
         {
             System.out.println("Employee is Present for full time ");
             System.out.println("Wage is "+dailyWage(8));
         }
-        else if ( check == 1 )
+        else if ( empCheck == 1 )
         {
             System.out.println("Employee is Present for part time ");
             System.out.println("Wage is "+dailyWage(4));
